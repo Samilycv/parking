@@ -1,11 +1,4 @@
- <!-- navbar -->
-<nav class="navbar bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand text-white" href="#">
-      Parking Space Finder
-    </a>
-  </div>
-</nav>
+<app-header></app-header>
 <section class="admin" style="background-color: #4a72ad;">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -41,11 +34,11 @@
                   </div>
 
                   <div class="pt-1 mb-4">
-                    <button class="btn btn-success btn-lg btn-block text-light" type="submit">Login</button>
+                    <button class="btn btn-primary btn-lg btn-block text-light" type="submit" routerLink="/location">Login</button>
                   </div>
 
-                  <p class="mb-5 pb-lg-2" style=" color: #044439;">New User? &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a routerLink="/register" style=" color: #044439;">Register here</a>
+                  <p class="mb-5 pb-lg-2" style=" color:  #4a72ad;">New User? &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a routerLink="/register" style=" color: #4a72ad;">Register here</a>
                   </p>
                 </form>
 

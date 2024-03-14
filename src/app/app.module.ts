@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { AdminregisterComponent } from './adminregister/adminregister.component';
+import { LocationComponent } from './location/location.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { AdminregisterComponent } from './adminregister/adminregister.component'
     HomeComponent,
     PagenotfoundComponent,
     AdminloginComponent,
-    AdminregisterComponent
+    AdminregisterComponent,
+    LocationComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
