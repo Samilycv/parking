@@ -13,6 +13,7 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { AdminregisterComponent } from './adminregister/adminregister.component';
 import { LocationComponent } from './location/location.component';
 import { LayoutComponent } from './layout/layout.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LayoutComponent } from './layout/layout.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
