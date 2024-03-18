@@ -5,18 +5,33 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiService {
-
   constructor(private http:HttpClient) { }
 
   //register api function
-  register(name:any,mobileno:any,vehicleno:any,password:any,confirmpassword:any){
+  register(first_name:any,last_name:any,email:any,username:any,password:any,dob:any,
+    gender:any,address:any,phone_number:any){
     const body={
-      name,
-      mobileno,
-      vehicleno,
+      first_name,
+      last_name,
+      email,
+      username,
       password,
-      confirmpassword
+      dob,
+      gender,
+      address,
+      phone_number,
     }
-    return this.http.post('http://127.0.0.1:8000/register/user',body)
+    return this.http.post('http://127.0.0.1:8000/register/admin',body)
+  }
+
+
+  //login api function
+  login(username: any, password: any) {
+    const body = {
+      username,
+      password
+    }
+    return this.http.post('http://127.0.0.1:8000/token/', body)
+
   }
 }
