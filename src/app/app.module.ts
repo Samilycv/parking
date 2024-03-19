@@ -15,6 +15,7 @@ import { LocationComponent } from './location/location.component';
 import { LayoutComponent } from './layout/layout.component';
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BookedComponent } from './booked/booked.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AdminloginComponent,
     AdminregisterComponent,
     LocationComponent,
-    LayoutComponent
+    LayoutComponent,
+    BookedComponent
   ],
   imports: [
     BrowserModule,

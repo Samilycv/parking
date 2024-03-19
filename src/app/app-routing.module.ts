@@ -7,6 +7,7 @@ import { RegisterComponent } from './register/register.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { LocationComponent } from './location/location.component';
 import { LayoutComponent } from './layout/layout.component';
+import { BookedComponent } from './booked/booked.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,9 @@ const routes: Routes = [
   },
   {
     path:"layout",component:LayoutComponent
+  },
+  {
+    path:"booked",component:BookedComponent
   },
   {
     path:"*", component:PagenotfoundComponent
