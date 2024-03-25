@@ -16,7 +16,6 @@
         <div class="form-outline mb-4">
           <label class="form-label" for="form1Example1">User Name</label>
           <input name="username" formControlName="username" type="text" id="form1Example1" class="form-control" />
-          <!-- <div *ngIf="this.loginForm.get('acno')?.errors&&this.loginForm.get('acno')?.touched" class="text-danger">*Invalid Account Number</div> -->
 
         </div>
 
@@ -24,7 +23,6 @@
         <div class="form-outline mb-4">
           <label class="form-label" for="form1Example2">Password</label>
           <input name="password" formControlName="password" type="password" id="form1Example2" class="form-control" />
-          <!-- <div *ngIf="this.loginForm.get('password')?.errors&&this.loginForm.get('password')?.touched" class="text-danger">*Invalid Password</div> -->
 
         </div>
 
@@ -42,11 +40,9 @@
         <h6 class="text-danger"></h6>
           <!-- Submit button -->
           <button type="submit" class="btn btn-primary btn-block mb-2" routerLink="/table">Sign in
-            <!-- <div class="spinner-border text-light" role="status"> -->
-              <!-- <span class="visually-hidden">Loading...</span> -->
-            <!-- </div> -->
+           
           </button>
-          <p>New to here? <a routerLink="/register"> Please Register </a></p>
+          <p>New to here? <a routerLink="/adminregister"> Please Register </a></p>
         </div>
       </form>
     </div>

@@ -9,6 +9,7 @@ import { LocationComponent } from './location/location.component';
 import { LayoutComponent } from './layout/layout.component';
 import { BookedComponent } from './booked/booked.component';
 import { TableComponent } from './table/table.component';
+import { AdminregisterComponent } from './adminregister/adminregister.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,9 @@ const routes: Routes = [
   },
    {
     path:"adminlogin",component:AdminloginComponent
+  },
+  {
+    path:"adminregister",component:AdminregisterComponent
   },
   {
     path:"register",component:RegisterComponent

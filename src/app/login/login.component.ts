@@ -31,12 +31,12 @@ export class LoginComponent implements OnInit {
         alert('Login successful')
         this.loginRouter.navigateByUrl('/location')
       })
-      
+
     }
-    else{
+    else {
       alert('Invalid login form')
     }
   }
-    }
+}
 
 
