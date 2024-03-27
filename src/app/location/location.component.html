@@ -1,67 +1,85 @@
-<app-header></app-header>
-
-<section class="admin">
-    <div class="container py-5 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        
-                  <form>
-  
-                    <div class="form-outline mb-4">
-                        <div class="d-flex align-items-center mb-3 pb-1">
-                            <span class="h4 fw-bold mb-0">Welcome User</span>
-                          </div>
-
-                        <div class="dropdown">
-                            <span class="h6 fw-bold mb-0">Select Location For Parking</span>
-
-                            <button class="btn btn-primary dropdown-toggle m-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              State
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li><a class="dropdown-item" href="#">Kerala</a></li>
-                              <li><a class="dropdown-item" href="#">Karnataka</a></li>
-                              <li><a class="dropdown-item" href="#">Tamilnadu</a></li>
-                            </ul>
-
-                            <button class="btn btn-primary dropdown-toggle m-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                District
-                              </button>
-                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Thrissur</a></li>
-                                <li><a class="dropdown-item" href="#">Ernakulam</a></li>
-                                <li><a class="dropdown-item" href="#">Thiruvanathapuram</a></li>
-                              </ul>
-
-                              <button class="btn btn-primary dropdown-toggle m-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                Location
-                              </button>
-                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Viyyur</a></li>
-                                <li><a class="dropdown-item" href="#">Edappally</a></li>
-                                <li><a class="dropdown-item" href="#">Kochuveli</a></li>
-                              </ul>
-                          </div>
-                    </div>
-
-                    <div class="dropdown">
-                        <span class="h6 fw-bold mb-0">Select Vehicle Type</span>
-
-                        <button class="btn btn-primary dropdown-toggle m-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                          Type
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">Two-Wheeler</a></li>
-                          <li><a class="dropdown-item" href="#">Four-Wheeler</a></li>
-                          <li><a class="dropdown-item" href="#">Heavy Vehicle</a></li>
-                        </ul>
-                        </div>
-                        <button class="btn btn-primary btn-lg btn-block text-light m-5" type="submit" routerLink="/layout">Search</button>
-
-                    
-                  </form>
-  
-                </div>
+<nav class="navbar navbar-expand-lg bg-primary  " style="width: 100%;  z-index: 1000;">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-lg-5 fw-bold font-awesome fs-2" routerLink="main/home" style="color:  #ffffff;">Parking
+      Space Finder</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-light">
+        <button class="btn btn- ms-lg-3 me-5 text-white fw-bold border-white" routerLink="/" style="color: #ffffff;"><i
+            class="fa-solid fa-house"></i> Home</button>
+      </ul>
     </div>
-  </section>
-  <app-footer></app-footer>
+  </div>
+</nav>
+<section class="admin">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
 
+      <form>
+
+        <div class="form-outline mb-4">
+          <div class="d-flex align-items-center mb-3 pb-1">
+            <span class="h4 fw-bold mb-0">Welcome User</span>
+          </div>
+
+          <div class="dropdown">
+            <span class="h6 fw-bold mb-0">Select Location For Parking</span>
+
+            <button class="btn btn-primary dropdown-toggle m-3" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              State
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Kerala</a></li>
+              <li><a class="dropdown-item" href="#">Karnataka</a></li>
+              <li><a class="dropdown-item" href="#">Tamilnadu</a></li>
+            </ul>
+
+            <button class="btn btn-primary dropdown-toggle m-3" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              District
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Thrissur</a></li>
+              <li><a class="dropdown-item" href="#">Ernakulam</a></li>
+              <li><a class="dropdown-item" href="#">Thiruvanathapuram</a></li>
+            </ul>
+
+            <button class="btn btn-primary dropdown-toggle m-3" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Location
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Viyyur</a></li>
+              <li><a class="dropdown-item" href="#">Edappally</a></li>
+              <li><a class="dropdown-item" href="#">Kochuveli</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <span class="h6 fw-bold mb-0">Select Vehicle Type</span>
+
+          <button class="btn btn-primary dropdown-toggle m-3" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Type
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Two-Wheeler</a></li>
+            <li><a class="dropdown-item" href="#">Four-Wheeler</a></li>
+            <li><a class="dropdown-item" href="#">Heavy Vehicle</a></li>
+          </ul>
+        </div>
+        <button class="btn btn-primary btn-lg btn-block text-light m-5" type="submit"
+          routerLink="/layout">Search</button>
+
+
+      </form>
+
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

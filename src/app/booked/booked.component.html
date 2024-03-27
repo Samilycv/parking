@@ -1,0 +1,76 @@
+<nav class="navbar navbar-expand-lg bg-primary  " style="width: 100%;  z-index: 1000;">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-lg-5 fw-bold font-awesome fs-2" routerLink="main/home" style="color:  #ffffff;">Parking
+      Space Finder</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-light">
+        <button class="btn btn- ms-lg-3 me-5 text-white fw-bold border-white" routerLink="/" style="color: #ffffff;"><i
+            class="fa-solid fa-house"></i> Home</button>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<h3 class="text-primary text-center my-3">Enter Parking Details</h3>
+
+<div class="col-6 mb-3 form-container">
+  <form class="mt-5 border px-5 mx-3 rounded shadow">
+    <!-- name input -->
+    <div class="form-outline mb-4">
+      <label class="form-label my-2" for="form1Example1">Name</label>
+      <input name="name" formControlName="name" type="text" id="form1Example1" class="form-control" />
+
+    </div>
+    <!-- mobile number -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form1Example1">Mobile Number</label>
+      <input name="mobile_number" formControlName="mobile_number" type="text" id="form1Example1" class="form-control" />
+
+    </div>
+
+    <!-- parking hours -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form1Example1">Parking Hours</label>
+      <input name="parking_hours" formControlName="parking_hours" type="text" id="form1Example1" class="form-control" />
+
+    </div>
+
+
+    <div class="text-center">
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary btn-block mb-2" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        Book
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Parking</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Parking Booked Successfully
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+<app-footer></app-footer>

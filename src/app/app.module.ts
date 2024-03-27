@@ -14,6 +14,10 @@ import { AdminregisterComponent } from './adminregister/adminregister.component'
 import { LocationComponent } from './location/location.component';
 import { LayoutComponent } from './layout/layout.component';
 import { HttpClientModule } from '@angular/common/http'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BookedComponent } from './booked/booked.component';
+import { TableComponent } from './table/table.component';
+
 
 @NgModule({
   declarations: [
@@ -27,12 +31,16 @@ import { HttpClientModule } from '@angular/common/http'
     AdminloginComponent,
     AdminregisterComponent,
     LocationComponent,
-    LayoutComponent
+    LayoutComponent,
+    BookedComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
