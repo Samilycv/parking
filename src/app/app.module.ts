@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BookedComponent } from './booked/booked.component';
 import { TableComponent } from './table/table.component';
+import { AddlocationComponent } from './addlocation/addlocation.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { TableComponent } from './table/table.component';
     LocationComponent,
     LayoutComponent,
     BookedComponent,
-    TableComponent
+    TableComponent,
+    AddlocationComponent
   ],
   imports: [
     BrowserModule,
